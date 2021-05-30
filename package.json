@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Less Verbose Programming",
   "main": "./src/index.js",
+  "files": [
+    "src",
+    "dist"
+  ],
   "directories": {
     "test": "tests"
   },
@@ -20,7 +24,7 @@
     "orbfunctions"
   ],
   "author": "NareshPS",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/NareshPS/orb-functions/issues"
   },
