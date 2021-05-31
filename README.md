@@ -5,7 +5,7 @@
 Browser Installation. The module is exported as *orbfns* global variable.
 
 ```html
-<script src="./dist/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/orb-functions@1.0.0/dist/index.js"></script>
 ```
 
 Node Installation
