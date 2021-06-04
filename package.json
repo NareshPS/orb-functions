@@ -1,7 +1,7 @@
 {
   "name": "orb-functions",
   "version": "1.2.0",
-  "description": "Less Verbose Programming",
+  "description": "Concise Function Programming",
   "main": "./src/index.js",
   "files": [
     "dist",
