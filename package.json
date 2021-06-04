@@ -1,6 +1,6 @@
 {
   "name": "orb-functions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Less Verbose Programming",
   "main": "./src/index.js",
   "files": [
