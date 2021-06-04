@@ -4,23 +4,23 @@
   "description": "Less Verbose Programming",
   "main": "./src/index.js",
   "files": [
-    "src",
-    "dist"
+    "dist",
+    "src/**/!(*.test.js)"
   ],
   "directories": {
-    "test": "tests"
+    "dist": "dist"
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "test": "ava"
+    "local": "webpack --config webpack.dev.config.js",
+    "test": "ava \"src/**/*.test.js\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/NareshPS/orb-functions.git"
   },
   "keywords": [
-    "functions",
-    "functionalprogramming",
+    "self",
     "orbfunctions"
   ],
   "author": "NareshPS",
