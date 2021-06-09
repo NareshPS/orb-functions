@@ -13,7 +13,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.js",
     "local": "webpack --config webpack.dev.config.js",
-    "test": "ava \"src/**/*.test.js\""
+    "test": "ava \"src/**/*.test.js\"",
+    "watchtest": "ava \"src/**/*.test.js\" --watch"
   },
   "repository": {
     "type": "git",

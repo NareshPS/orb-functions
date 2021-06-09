@@ -1,6 +1,7 @@
 const test = require('ava');
-const { self } = require('../src/index.js');
+const { self, constant } = require('./index.js')
 
+////////////////////////////// self [start] //////////////////////////////
 test('self-with-primitive-type', t => {
   const arg = 5
   const result = self(arg)
@@ -18,6 +19,27 @@ test('self-with-object', t => {
   const result = self(arg)
   t.is(arg, result)
 })
+////////////////////////////// self [end] //////////////////////////////
+
+////////////////////////////// constant [start] //////////////////////////////
+test('constant-no-args', t => {
+  const input = 'constant-input'
+  const cfn = constant()
+  const output = cfn(input)
+
+  t.is(typeof cfn, 'function')
+  t.is(output, undefined)
+})
+
+test('constant-with-input', t => {
+  const input = 'constant-input'
+  const cfn = constant(input)
+  const output = cfn()
+
+  t.is(typeof cfn, 'function')
+  t.is(output, input)
+})
+////////////////////////////// constant [end] //////////////////////////////
 
 // t.pass();
 
