@@ -14,6 +14,8 @@ npm install orb-functions
 ```
 
 ### self
+It returns the first input argument it is called with.
+
 ```js
 // Example
 const input = [1, 2, 3]
@@ -25,4 +27,15 @@ toObject({items: input})
 
 toObject({items: input, value: Math.square})
 // Output {1:1, 2:4, 3:6}
+```
+
+### constant
+It is useful in the situations which require a function to return a fixed value.
+
+```js
+// Example
+const input = 'suhm'
+const cfn = constant(input)
+cfn()
+// Output 'suhm'
 ```
